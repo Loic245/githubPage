@@ -14,7 +14,7 @@ const Contact = lazy(() => import("../components/contact"));
 const Router = () => {
   return (
     <div>
-    {/* <Routes>
+    <Routes>
       <Route
         path="/"
         element={ 
@@ -58,10 +58,10 @@ const Router = () => {
           </Suspense>
         }
       /> 
-    </Routes> */}
-    <Layout>
+    </Routes>
+    {/* <Layout>
         <Accueil />
-    </Layout>
+    </Layout> */}
     </div>
   );
 };
