@@ -13,51 +13,14 @@ const Contact = lazy(() => import("../components/contact"));
 
 const Router = () => {
   return (
+    <div>
     <Routes>
       <Route
         path="/"
-        element={
-          // <Suspense fallback={<Spinner />}>
-          //   <Layout>
-              <Accueil />
-            // </Layout>
-          // </Suspense>
-        }
+        element={<Accueil />}
       />
-
-      <Route
-        path="/experience"
-        element={
-          // <Suspense fallback={<Spinner />}>
-          //   <Layout>
-              <Experience />
-          //   </Layout>
-          // </Suspense>
-        }
-      />
-
-      {/* <Route
-        path="/competence"
-        element={
-          <Suspense fallback={<Spinner />}>
-            <Layout>
-              <Competence />
-            </Layout>
-          </Suspense>
-        }
-      />
-
-      <Route
-        path="/contact"
-        element={
-          <Suspense fallback={<Spinner />}>
-            <Layout>
-              <Contact />
-            </Layout>
-          </Suspense>
-        }
-      /> */}
     </Routes>
+    </div>
   );
 };
 
