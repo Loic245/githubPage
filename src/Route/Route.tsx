@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import Layout from "../components/Layout";
 import Spinner from "../components/Spinner";
@@ -11,59 +11,56 @@ const Competence = lazy(() => import("../components/competence"));
 
 const Contact = lazy(() => import("../components/contact"));
 
-const Router = () => {
+const Routers = () => {
   return (
-    <div>
-    <Routes>
-      <Route
-        path="/"
-        element={ 
-          <Suspense fallback={<Spinner />}>
-            <Layout>
-              <Accueil />
-            </Layout>
-          </Suspense>
-        }
-      /> 
+    <Router>
+      <Routes>
+        <Route
+          path="/"
+          element={ 
+            <Suspense fallback={<Spinner />}>
+              <Layout>
+                <Accueil />
+              </Layout>
+            </Suspense>
+          }
+        /> 
 
-      <Route
-        path="/experience"
-        element={
-          <Suspense fallback={<Spinner />}>
-            <Layout>
-              <Experience />
-            </Layout>
-          </Suspense>
-        }
-      /> 
+        <Route
+          path="/experience"
+          element={
+            <Suspense fallback={<Spinner />}>
+              <Layout>
+                <Experience />
+              </Layout>
+            </Suspense>
+          }
+        /> 
 
-      <Route
-        path="/competence"
-        element={
-          <Suspense fallback={<Spinner />}>
-            <Layout>
-              <Competence />
-            </Layout>
-          </Suspense>
-        }
-      />
+        <Route
+          path="/competence"
+          element={
+            <Suspense fallback={<Spinner />}>
+              <Layout>
+                <Competence />
+              </Layout>
+            </Suspense>
+          }
+        />
 
-      <Route
-        path="/contact"
-        element={
-          <Suspense fallback={<Spinner />}>
-            <Layout>
-              <Contact />
-            </Layout>
-          </Suspense>
-        }
-      /> 
-    </Routes>
-    {/* <Layout>
-        <Accueil />
-    </Layout> */}
-    </div>
+        <Route
+          path="/contact"
+          element={
+            <Suspense fallback={<Spinner />}>
+              <Layout>
+                <Contact />
+              </Layout>
+            </Suspense>
+          }
+        /> 
+      </Routes>
+    </Router>
   );
 };
 
-export default Router;
+export default Routers;
