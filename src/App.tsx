@@ -7,7 +7,8 @@ import Experience from "./components/experience";
 function App() {
   return (
     <BrowserRouter>
-      <Router />
+      {/* <Router /> */}
+      <Accueil />
     </BrowserRouter>
     // <div>
     //   <Accueil />

@@ -17,26 +17,26 @@ const Router = () => {
       <Route
         path="/"
         element={
-          <Suspense fallback={<Spinner />}>
-            <Layout>
+          // <Suspense fallback={<Spinner />}>
+          //   <Layout>
               <Accueil />
-            </Layout>
-          </Suspense>
+            // </Layout>
+          // </Suspense>
         }
       />
 
       <Route
         path="/experience"
         element={
-          <Suspense fallback={<Spinner />}>
-            <Layout>
+          // <Suspense fallback={<Spinner />}>
+          //   <Layout>
               <Experience />
-            </Layout>
-          </Suspense>
+          //   </Layout>
+          // </Suspense>
         }
       />
 
-      <Route
+      {/* <Route
         path="/competence"
         element={
           <Suspense fallback={<Spinner />}>
@@ -56,7 +56,7 @@ const Router = () => {
             </Layout>
           </Suspense>
         }
-      />
+      /> */}
     </Routes>
   );
 };
