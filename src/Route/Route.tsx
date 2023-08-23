@@ -17,10 +17,51 @@ const Router = () => {
     {/* <Routes>
       <Route
         path="/"
-        element={<Accueil />}
+        element={ 
+          <Suspense fallback={<Spinner />}>
+            <Layout>
+              <Accueil />
+            </Layout>
+          </Suspense>
+        }
+      /> 
+
+      <Route
+        path="/experience"
+        element={
+          <Suspense fallback={<Spinner />}>
+            <Layout>
+              <Experience />
+            </Layout>
+          </Suspense>
+        }
+      /> 
+
+      <Route
+        path="/competence"
+        element={
+          <Suspense fallback={<Spinner />}>
+            <Layout>
+              <Competence />
+            </Layout>
+          </Suspense>
+        }
       />
+
+      <Route
+        path="/contact"
+        element={
+          <Suspense fallback={<Spinner />}>
+            <Layout>
+              <Contact />
+            </Layout>
+          </Suspense>
+        }
+      /> 
     </Routes> */}
-    <Accueil />
+    <Layout>
+        <Accueil />
+    </Layout>
     </div>
   );
 };
