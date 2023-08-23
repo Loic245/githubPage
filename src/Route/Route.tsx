@@ -14,12 +14,13 @@ const Contact = lazy(() => import("../components/contact"));
 const Router = () => {
   return (
     <div>
-    <Routes>
+    {/* <Routes>
       <Route
         path="/"
         element={<Accueil />}
       />
-    </Routes>
+    </Routes> */}
+    <Accueil />
     </div>
   );
 };
