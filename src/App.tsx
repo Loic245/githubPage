@@ -6,13 +6,13 @@ import Experience from "./components/experience";
 
 function App() {
   return (
-    // <BrowserRouter>
-    //   <Router />
-    // </BrowserRouter>
-    <div>
-      <Accueil />
-      <Experience />
-    </div>
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
+    // <div>
+    //   <Accueil />
+    //   <Experience />
+    // </div>
   );
 }
 
