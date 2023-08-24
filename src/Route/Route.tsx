@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import Layout from "../components/Layout";
 import Spinner from "../components/Spinner";
@@ -13,7 +13,6 @@ const Contact = lazy(() => import("../components/contact"));
 
 const Routers = () => {
   return (
-    <Router>
       <Routes>
         <Route
           path="/githubPage"
@@ -59,7 +58,6 @@ const Routers = () => {
           }
         /> 
       </Routes>
-    </Router>
   );
 };
 
