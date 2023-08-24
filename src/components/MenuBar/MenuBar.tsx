@@ -6,62 +6,59 @@ import {
     ListItem,
     ListItemButton,
     ListItemText,
-    Grid,
     Drawer,
   } from "@mui/material";
   import { useState } from "react";
   import { useTheme } from "@mui/material/styles";
   import { useMediaQuery } from "@mui/material";
   import MenuIcon from "@mui/icons-material/Menu";
-  import AccountCircleIcon from "@mui/icons-material/AccountCircle";
   import SchoolIcon from "@mui/icons-material/School";
   import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
   import ListIcon from "@mui/icons-material/List";
   import InfoIcon from "@mui/icons-material/Info";
   import { useNavigate } from "react-router-dom";
-  import { Link, NavLink } from "react-router-dom";
+  import { NavLink } from "react-router-dom";
   import { useLocation } from "react-router-dom";
   
   const drawerWidth = 240;
-  // const navItems = ["Profil", "Compétence", "Expérience", "Contact"];
   const navItems = [
     {
       path: "Profil",
-      link: "/",
+      link: "/githubPage",
     },
     {
       path: "Compétences",
-      link: "/competence",
+      link: "/githubPage/competence",
     },
     {
       path: "Expériences",
-      link: "/experience",
+      link: "/githubPage/experience",
     },
     {
       path: "Contact",
-      link: "/contact",
+      link: "/githubPage/contact",
     },
   ];
   const mobileItems = [
     {
       path: "Profil",
       icon: <InfoIcon />,
-      link: "/",
+      link: "/githubPage",
     },
     {
       path: "Compétence",
       icon: <ListIcon />,
-      link: "/competence",
+      link: "/githubPage/competence",
     },
     {
       path: "Expérience",
       icon: <SchoolIcon />,
-      link: "/experience",
+      link: "/githubPage/experience",
     },
     {
       path: "Contact",
       icon: <LocalPhoneIcon />,
-      link: "/contact",
+      link: "/githubPage/contact",
     },
   ];
   

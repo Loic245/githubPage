@@ -2,9 +2,6 @@ import MenuBar from "../MenuBar";
 import { useTheme } from "@mui/material/styles";
 import { Box, Grid, useMediaQuery } from "@mui/material";
 
-interface ILayout {
-  children: any;
-}
 
 const Layout = (props: any) => {
   const theme = useTheme();

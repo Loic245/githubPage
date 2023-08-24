@@ -16,7 +16,7 @@ const Routers = () => {
     <Router>
       <Routes>
         <Route
-          path="/"
+          path="/githubPage"
           element={ 
             <Suspense fallback={<Spinner />}>
               <Layout>
@@ -27,7 +27,7 @@ const Routers = () => {
         /> 
 
         <Route
-          path="/experience"
+          path="/githubPage/experience"
           element={
             <Suspense fallback={<Spinner />}>
               <Layout>
@@ -38,7 +38,7 @@ const Routers = () => {
         /> 
 
         <Route
-          path="/competence"
+          path="/githubPage/competence"
           element={
             <Suspense fallback={<Spinner />}>
               <Layout>
@@ -49,7 +49,7 @@ const Routers = () => {
         />
 
         <Route
-          path="/contact"
+          path="/githubPage/contact"
           element={
             <Suspense fallback={<Spinner />}>
               <Layout>
